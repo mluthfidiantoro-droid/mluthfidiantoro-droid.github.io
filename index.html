@@ -367,6 +367,17 @@
     .tools-line { gap:32px; }
     .tool-tag { font-size:12px; padding:8px 16px; }
   }
+  .freelance-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:20px; }
+  .fl-card { border:1px solid rgba(42,42,42,0.5); border-radius:14px; padding:26px 28px; background:var(--card-bg); display:flex; flex-direction:column; transition:transform 0.3s,border-color 0.3s; }
+  .fl-card:hover { transform:translateY(-4px); border-color:#3a3a3a; }
+  .fl-client { font-family:'Poppins',sans-serif; font-size:19px; font-weight:500; color:#e8e8e8; margin-bottom:6px; }
+  .fl-project { font-size:13.5px; color:var(--muted); line-height:1.65; margin-bottom:18px; flex:1; }
+  .fl-foot { display:flex; align-items:center; gap:10px; }
+  .fl-role { display:inline-block; background:var(--tag-bg); color:var(--muted); font-size:11px; padding:5px 13px; border-radius:100px; text-transform:uppercase; letter-spacing:0.5px; font-weight:500; white-space:nowrap; }
+  .fl-watch { margin-left:auto; display:inline-flex; align-items:center; gap:6px; color:#e8e8e8; font-size:13px; font-weight:600; text-decoration:none; transition:color 0.3s; white-space:nowrap; }
+  .fl-watch:hover { color:#4ade80; }
+  .fl-status { margin-left:auto; font-size:11px; color:var(--muted); font-style:italic; letter-spacing:0.5px; }
+  @media (max-width:768px) { .freelance-grid { grid-template-columns:1fr; } }
 </style>
 </head>
 <body>
@@ -377,6 +388,7 @@
     <a href="#experience">Experience</a>
     <a href="#socmed">Social Media</a>
     <a href="#video">Video</a>
+    <a href="#freelance">Freelance</a>
     <a href="#services">Services</a>
     <a href="#tools">Tools</a>
     <a href="#experience">Experience</a>
@@ -710,6 +722,67 @@
 </section>
 
 
+
+<section id="freelance">
+  <div class="section-header scroll-reveal"><h2>Freelance Video Production</h2><span>Client Work &middot; 2026</span></div>
+  <div class="freelance-grid scroll-reveal">
+    <div class="fl-card">
+      <h3 class="fl-client">Home Credit</h3>
+      <p class="fl-project">Booth build documentation at Jakarta Fair (PRJ) — from day one through the reveal. Via Ventura.</p>
+      <div class="fl-foot">
+        <span class="fl-role">Videographer &amp; Editor</span>
+        <a href="https://drive.google.com/file/d/1JnNd9RsyDj72-zbv5aASBIo5ggWpP4cC/view" target="_blank" class="fl-watch">&#9654; Watch</a>
+      </div>
+    </div>
+    <div class="fl-card">
+      <h3 class="fl-client">Optimus Nutrition</h3>
+      <p class="fl-project">&ldquo;Next Athlete: Road to HYROX&rdquo; — vertical video series with athlete &amp; KOL Yonathan: before, during &amp; after HYROX Jakarta.</p>
+      <div class="fl-foot">
+        <span class="fl-role">Videographer &amp; Editor</span>
+        <a href="https://drive.google.com/file/d/1FLi_5bQ_3y_VMF-HrWXePIJm_5xQzHT3/view" target="_blank" class="fl-watch">&#9654; Watch</a>
+      </div>
+    </div>
+    <div class="fl-card">
+      <h3 class="fl-client">Lensa Academy — &ldquo;Culture in Contrast&rdquo;</h3>
+      <p class="fl-project">Juxtaposition photography event ft. Andika Oky Arisandi — motion bumper, event coverage &amp; after-movie. Via Ventura.</p>
+      <div class="fl-foot">
+        <span class="fl-role">Videographer &amp; Editor</span>
+        <a href="https://drive.google.com/file/d/1uiPmJ2xUqwvWn4C4egQ3r2Z82PJP4-vM/view" target="_blank" class="fl-watch">&#9654; Watch</a>
+      </div>
+    </div>
+    <div class="fl-card">
+      <h3 class="fl-client">PLN</h3>
+      <p class="fl-project">Sustainability Report 2025 — broadcast-grade motion graphic &amp; data infographic on Indonesia&rsquo;s renewable energy (nuclear, solar, hydro &amp; steam power).</p>
+      <div class="fl-foot">
+        <span class="fl-role">Motion Designer</span>
+      </div>
+    </div>
+    <div class="fl-card">
+      <h3 class="fl-client">&#274;SEN (&#20234;&#29983;&#37291;&#30274;)</h3>
+      <p class="fl-project">Anti-aging &amp; preventive medicine brand — cinematic Founder Vision Film, bilingual (Mandarin &amp; English).</p>
+      <div class="fl-foot">
+        <span class="fl-role">Video Editor</span>
+        <span class="fl-status">Confidential</span>
+      </div>
+    </div>
+    <div class="fl-card">
+      <h3 class="fl-client">BRI</h3>
+      <p class="fl-project">Regional Meeting coverage — Yogyakarta &amp; Surabaya. Via Ventura.</p>
+      <div class="fl-foot">
+        <span class="fl-role">Video Editor</span>
+        <span class="fl-status">Confidential</span>
+      </div>
+    </div>
+    <div class="fl-card">
+      <h3 class="fl-client">Bodrex Extra</h3>
+      <p class="fl-project">Campaign content with athlete &amp; KOL Yonathan.</p>
+      <div class="fl-foot">
+        <span class="fl-role">Videographer &amp; Editor</span>
+        <span class="fl-status">Ongoing</span>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section id="tools">
   <div class="section-header scroll-reveal"><h2>Tools & Software</h2><span>What I Work With</span></div>
